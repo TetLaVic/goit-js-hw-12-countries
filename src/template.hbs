@@ -1,0 +1,15 @@
+<div class class="country-details">
+     <h2 class="country-name">{{name}}</h2>
+     <div class="left-side-details">
+         <img src="{{flag}}" width=300px alt="{{name}}">
+     </div>
+     <div class="right-side-details">
+         <p><b> Population:</b> {{population}}</p>
+         <p> <b> Language(s):</b></p>
+     <ul>
+         {{#each languages}}
+             <li class="list-lang-item">{{this.name}}</li>
+         {{/each}}
+     </ul>
+     </div>
+</div>
